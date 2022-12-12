@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+{%block content%}
+<h1>This is the home page</h1>
+<!-- Passing variables -->
+{{ text }} {{ user + "!" }}
+<!-- If Else -->
+{% if user == "Caleb" %}
+<p>Welcome to your website, Caleb!</p>
+{% else %}
+<p>Welcome to the website!</p>
+{% endif %}
+{%endblock%}
